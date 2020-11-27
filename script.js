@@ -1,13 +1,15 @@
 const projects = [
   {
-    name: "huddle landing page with single introductory section",
     url: "huddle-landing-page-with-single-introductory-section",
+  },
+  {
+    url: "single-price-grid-component",
   },
 ];
 
 const list = document.querySelector("#lista");
 
-projects.forEach(({ name, url }) => {
+projects.forEach(({ url }) => {
   const listItem = document.createElement("li");
 
   listItem.innerHTML = `
