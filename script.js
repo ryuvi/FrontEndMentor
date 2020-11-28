@@ -5,6 +5,9 @@ const projects = [
   {
     url: "single-price-grid-component",
   },
+  {
+    url: "profile-card-component",
+  },
 ];
 
 const list = document.querySelector("#lista");
