@@ -8,9 +8,6 @@ const projects = [
   {
     url: "profile-card-component",
   },
-	{
-		url: "four-card-feature-section",
-	},
 ];
 
 const list = document.querySelector("#lista");
