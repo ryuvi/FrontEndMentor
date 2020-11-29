@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap')
 
+$newbie: #5ae2a9
+$junior: #aad742
+$intermediate: #fdce81
+$advance: #ff9e7a
+
 *
+    scroll-behavior: smooth
     font-family: 'Poppins', sans-serif
     margin: 0
     padding: 0
@@ -9,17 +15,71 @@ header
     align-items: center
     display: flex
     font-size: 50px
+    font-weight: 700
     justify-content: center
     padding: 25px 0
 
-ul
+main
+    display: flex
+    width: 100%
+
+.menu
+    display: grid
+    position: fixed
+    a
+        border: 1px solid black
+        color: black
+        cursor: pointer
+        font-weight: 700
+        left: -150px
+        padding: 10px 50px 10px 25px
+        position: relative
+        text-decoration: none
+        transition: color 0.5s, left 0.5s
+        &:hover
+            color: white
+            left: 0
+    #nm
+        background-color: $newbie
+    #jm
+        background-color: $junior
+    #im
+        background-color: $intermediate
+    #am
+        background-color: $advance
+    //#gm
+        //background-color: 
+
+.newbie
+    height: 100vh
+    h1
+        color: $newbie
+.junior
+    margin-top: 25px
+    height: 100vh
+    h1
+        color: $junior
+.intermediate
+    height: 100vh
+    h1
+        color: $intermediate
+.advance
+    height: 100vh
+    h1
+        color: $advance
+
+.project
+    margin-left: 25%
+
+.projects
     align-items: center
     display: flex
     flex-wrap: wrap
     justify-content: center
     list-style: none
 
-li
+.blocks
+    background-color: white
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
     height: 250px
     margin: 25px

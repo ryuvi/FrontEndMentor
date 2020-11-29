@@ -1,4 +1,4 @@
-const projects = [
+const newbie = [
   {
     url: "huddle-landing-page-with-single-introductory-section",
   },
@@ -8,15 +8,19 @@ const projects = [
   {
     url: "profile-card-component",
   },
-	{
-		url: "four-card-feature-section",
-	},
+  {
+    url: "four-card-feature-section",
+  },
+  {
+    url: "ping-coming-soon-page",
+  },
 ];
 
-const list = document.querySelector("#lista");
+const list = document.getElementById("newbie");
 
-projects.forEach(({ url }) => {
+newbie.forEach(({ url }) => {
   const listItem = document.createElement("li");
+  listItem.setAttribute("class", "blocks");
 
   listItem.innerHTML = `
         <img src="./src/${url}/design/desktop-preview.jpg" alt="${url}">

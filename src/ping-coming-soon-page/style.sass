@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap')
+
+$Blue: hsl(223, 87%, 63%)
+$PaleBlue: hsl(223, 100%, 88%)
+$LightRed: hsl(354, 100%, 66%)
+$Gray: hsl(0, 0%, 59%)
+$VeryDarkBlue: hsl(209, 33%, 12%)
+$FontSize: 20px
+
+*
+    margin: 0
+    padding: 0
+    font-family: 'Libre Franklin', sans-serif
+    font-size: 20px
+
+body
+    align-items: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: auto
+
+#logo
+    margin: 50px 0
+
+h1
+    color: $Gray
+    font-size: 1.5em
+    font-weight: 300
+    margin-bottom: 25px
+    span
+        color: $VeryDarkBlue
+        font-size: 1em
+        font-weight: 700
+
+.first
+    font-size: 0.7em
+    margin-bottom: 25px
+
+.form
+    display: flex
+    #nothing
+        display: flex
+        flex-direction: column
+        small
+            color: $LightRed
+            font-size: 0.5em
+            font-style: italic
+            margin-top: 5px
+            margin-left: 25px
+            opacity: 0
+            transition: opacity 0.5s
+    #email
+        border: 1px solid $Gray
+        border-radius: 50px
+        font-size: 0.7em
+        margin-right: 20px
+        outline: none
+        padding: 10px 25px
+        width: 300px
+        &::placeholder
+            color: $Gray
+    #button
+        background-color: $Blue
+        border: none
+        border-radius: 50px
+        box-shadow: 0 5px 10px hsla(223, 87%, 63%, 0.3)
+        color: white
+        cursor: pointer
+        font-size: 0.7em
+        height: 40px
+        outline: none
+        padding: 10px 30px
+        transition: filter 0.5s
+        &:hover
+            filter: brightness(1.1)
+
+#dashboard
+    margin: 50px 0
+    width: 50%
+
+.social
+    display: flex
+    i
+        border: 1px solid $Blue
+        font-size: 0.6em
+        margin: 0 10px
+        color: $Blue
+        transition: background-color 0.5s, color 0.5s
+        &:hover
+            background-color: $Blue
+            color: white
+    .fa-facebook-f
+        border-radius: 50%
+        padding: 5px 7px
+    .fa-twitter
+        border-radius: 50%
+        padding: 5px
+    .fa-instagram
+        border-radius: 50%
+        padding: 5px 6px
+
+.last
+    color: $Gray
+    font-size: 0.6em
+    margin: 15px 0
+
+.attribution
+    font-size: 0.6em
+    a
+        color: $Blue
+        font-size: 1em
+
+@media screen and (max-width: 375px)
+    .form
+        flex-direction: column
+        #nothing
+            margin-bottom: 10px
+        #email
+            width: 75%

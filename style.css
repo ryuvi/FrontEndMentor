@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 * {
+  scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
@@ -13,13 +14,98 @@ header {
   display: -ms-flexbox;
   display: flex;
   font-size: 50px;
+  font-weight: 700;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 25px 0;
 }
 
-ul {
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.menu {
+  display: -ms-grid;
+  display: grid;
+  position: fixed;
+}
+
+.menu a {
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  font-weight: 700;
+  left: -150px;
+  padding: 10px 50px 10px 25px;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: color 0.5s, left 0.5s;
+  transition: color 0.5s, left 0.5s;
+}
+
+.menu a:hover {
+  color: white;
+  left: 0;
+}
+
+.menu #nm {
+  background-color: #5ae2a9;
+}
+
+.menu #jm {
+  background-color: #aad742;
+}
+
+.menu #im {
+  background-color: #fdce81;
+}
+
+.menu #am {
+  background-color: #ff9e7a;
+}
+
+.newbie {
+  height: 100vh;
+}
+
+.newbie h1 {
+  color: #5ae2a9;
+}
+
+.junior {
+  margin-top: 25px;
+  height: 100vh;
+}
+
+.junior h1 {
+  color: #aad742;
+}
+
+.intermediate {
+  height: 100vh;
+}
+
+.intermediate h1 {
+  color: #fdce81;
+}
+
+.advance {
+  height: 100vh;
+}
+
+.advance h1 {
+  color: #ff9e7a;
+}
+
+.project {
+  margin-left: 25%;
+}
+
+.projects {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -34,7 +120,8 @@ ul {
   list-style: none;
 }
 
-li {
+.blocks {
+  background-color: white;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   height: 250px;
@@ -43,11 +130,11 @@ li {
   width: 250px;
 }
 
-li img {
+.blocks img {
   width: 250px;
 }
 
-li div {
+.blocks div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -60,14 +147,14 @@ li div {
   margin: 25px 10px;
 }
 
-li a {
+.blocks a {
   color: #00e;
 }
 
-li a:active {
+.blocks a:active {
   color: #00e;
 }
 
-li i {
+.blocks i {
   font-size: 30px;
 }
