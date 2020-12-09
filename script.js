@@ -22,7 +22,7 @@ const junior = [];
 const intermediate = [];
 const advance = [
   {
-    url: "rock-paper-scissors"
+    url: "rock-paper-scissors-game"
   }
 ];
 

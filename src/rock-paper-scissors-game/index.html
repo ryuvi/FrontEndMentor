@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="./script.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock, Paper, Scissors</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <header id="brite">
+        <h1>
+          <span>Rock</span>
+          <span>Paper</span>
+          <span>Scissors</span>
+          <span>Lizard</span>
+          <span>Spock</span>
+        </h1>
+        <div class="score-container">
+          <h4>Score</h4>
+          <p id="score">0</p>
+        </div>
+      </header>
+
+      <main id="main">
+        <div class="top">
+          <button class="btn-circle scissors pick" data-choice="scissors">
+            <span class="wrapper">
+              <img src="./images/icon-scissors.svg" alt="" />
+            </span>
+          </button>
+        </div>
+
+        <div class="middle">
+          <button class="btn-circle spock pick" data-choice="spock">
+            <span class="wrapper">
+              <img src="./images/icon-spock.svg" alt="" />
+            </span>
+          </button>
+          <button class="btn-circle paper pick" data-choice="paper">
+            <span class="wrapper">
+              <img src="./images/icon-paper.svg" alt="" />
+            </span>
+          </button>
+        </div>
+
+        <div class="bottom">
+          <button class="btn-circle lizard pick" data-choice="lizard">
+            <span class="wrapper">
+              <img src="./images/icon-lizard.svg" alt="" />
+            </span>
+          </button>
+          <button class="btn-circle rock pick" data-choice="rock">
+            <span class="wrapper">
+              <img src="./images/icon-rock.svg" alt="" />
+            </span>
+          </button>
+        </div>
+      </main>
+
+      <div class="rules-modal" id="modal">
+        <img src="./images/image-rules-bonus.svg" alt="rules" />
+        <button id="close">
+          <img src="./images/icon-close.svg" alt="close" />
+        </button>
+      </div>
+
+      <button class="btn-rules" id="open">Rules</button>
+    </div>
+    <div class="selection" id="selection">
+      <div>
+        <h2>You picked</h2>
+        <button class="btn-circle paper" id="user_select">
+          <span class="wrapper">
+            <img src="./images/icon-paper.svg" alt="" />
+          </span>
+        </button>
+      </div>
+      <div class="go-down">
+        <p class="big-text">You <span id="winner">Win</span></p>
+        <button class="btn" id="reset">Play Again</button>
+      </div>
+      <div>
+        <h2>The house picked</h2>
+        <button class="btn-circle rock" id="computer_select">
+          <span class="wrapper">
+            <img src="./images/icon-rock.svg" alt="" />
+          </span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
